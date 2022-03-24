@@ -136,7 +136,19 @@ h4 {
 .form-control {
   /* background-color: pink; */
   height: 3rem;
+  border-color: var(--line);
+  color: var(--body);
 }
+
+.form-control:focus {
+  color: var(--title);
+  background-color: #fff;
+  border-color: var(--line);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(160, 163, 189, 0.5);
+}
+
+
 /* Fin inputs */
 
 /* input file */
