@@ -1,0 +1,325 @@
+/* ESTILOS GENERALES */
+:root {
+  /* Gray scale */
+  --title: #000000;
+  --body: #4E4B66;
+  --label: #6E7191;
+  --placeholder: #A0A3BD;
+  --line: #D9DBE9;
+  --input-bg: #EFF0F6;
+  --bg: #F7F7FC;
+  --white: #FCFCFC;
+  /* Foundations */
+  --primary: #B5121C;
+  --primary-dark: #910C14;
+  --primary-light: #DC2D38;
+  --secondary: #545454;
+  /* States */
+  --danger: #DC2D38;
+  --warning: #F4B740;
+  --info: #3D9CF3;
+  --success: #00BA88;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--body);
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.2rem;
+}
+
+main {
+  /* background-color: salmon; */
+  min-height: calc(100vh - 72px);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+.text-help {
+  font-size: .875rem;
+  padding-top: .25rem;
+  display: none;
+}
+
+.error {
+  color: var(--danger);
+}
+
+.success {
+  color: var(--success);
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-link {
+  color: var(--info);
+}
+
+.btn-link:focus, .btn-link.focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-light);
+  color: var(--white);
+}
+
+.primary-btn:focus {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary-dark);
+  box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.4);
+}
+
+.light-btn:hover {
+  background-color: var(--input-bg);
+}
+
+.light-btn:focus {
+  background-color: var(--input-bg);
+  box-shadow: 0 0 0 0.25rem rgba(160, 163, 189, 0.4);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* input file */
+
+.file-upload-wrapper {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  overflow: hidden;
+  border-radius: .25rem;
+  border: solid 1px var(--line);
+}
+
+.file-upload-wrapper:after {
+  content: attr(data-text);
+  font-size: 1.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  padding: 0 12px 0 190px ;
+  display: block;
+  width: 100%;
+  z-index: 20;
+  height: 3rem;
+  line-height: 3rem;
+  color: var(--label);
+  cursor: pointer;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.file-upload-wrapper:before {
+  content: 'Seleccionar archivo';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  height: 3rem;
+  background: var(--input-bg);
+  color: var(--label);
+  z-index: 25;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  padding: 0 12px;
+  cursor: pointer;
+
+}
+.file-upload-wrapper:hover:before {
+  background: var(--line);
+}
+.file-upload-wrapper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Fin input file */
+
+.render-img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* Tabs */
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--placeholder);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--body);
+}
+
+.nav-pills .nav-link {
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--title);
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0px 3px 0px var(--primary);
+}
+/* Fin Tabs */
+
+/* FIN ESTILOS GENERALES */
+
+/* GENERADOR PDF */
+.navbar {
+  /* background-color: pink; */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-shadow: 0px 4px 4px #E5E5E5;
+}
+
+.navbar .navbar-brand {
+  /* background-color: greenyellow; */
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-brand img {
+  display: block;
+  height: 1.5rem;
+}
+
+.content-form-generador {
+  /* background-color: lightyellow; */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-generador {
+  /* background-color: pink; */
+  width: 100%;
+}
+
+.form-generador p {
+  margin-bottom: .5rem;
+}
+
+.content-img {
+  /* background-color: greenyellow; */
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.content-img img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* FIN GENERADOR PDF */
+
+/* MODALS */
+
+.modal-content {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.modal-header {
+  /* background-color: pink; */
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.modal-body {
+  /* background-color: lavender; */
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  padding-top: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-top: 0;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: var(--title);
+}
+
+
+/* FIN MODALS */

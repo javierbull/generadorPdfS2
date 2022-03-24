@@ -1,0 +1,74 @@
+/* Large devices (laptops, less than 1400px) */
+@media (max-width: 1400px) {
+  main {
+    /* background-color: pink; */
+  }
+}
+
+/* Large devices (desktops, tablets landscape, less than 1200px) */
+@media (max-width: 1199.98px) {
+  main {
+    /* background-color: lavender; */
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  main {
+    /* background-color: salmon; */
+  }
+
+  /* Generador PDF */
+
+  .content-form-generador {
+    /* background-color: lightyellow; */
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .content-img {
+    /* background-color: greenyellow; */
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .content-img img {
+    width: 60%;
+  }
+
+  .row-reverse-mobile {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+    /* Fin Generador PDF */
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  main {
+    /* background-color: lightblue; */
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  main {
+    /* background-color: lightyellow; */
+  }
+
+  .container-mobile {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .nav-pills .nav-link {
+    background: none;
+    border: 0;
+    font-size: .875rem;
+  }
+
+}
