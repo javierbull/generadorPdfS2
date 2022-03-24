@@ -32,11 +32,10 @@ body {
   color: var(--body);
   font-size: 16px;
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 1.2rem;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 main {
-  /* background-color: salmon; */
   min-height: calc(100vh - 72px);
 }
 
@@ -72,6 +71,11 @@ h4 {
 
 .fw-bold {
   font-weight: 700;
+}
+
+/* Buttons */
+.btn {
+  height: 3rem;
 }
 
 .btn-block {
@@ -114,9 +118,26 @@ h4 {
   box-shadow: 0 0 0 0.25rem rgba(160, 163, 189, 0.4);
 }
 
+/* Fin Buttons */
+
+/* Inputs */
 .form-group {
   margin-bottom: 1rem;
 }
+
+.form-group label {
+  color: var(--label);
+}
+
+.form-control::placeholder {
+  color: var(--placeholder);
+}
+
+.form-control {
+  /* background-color: pink; */
+  height: 3rem;
+}
+/* Fin inputs */
 
 /* input file */
 
@@ -326,12 +347,15 @@ h4 {
 
 /* LOGIN */
 .field-icon {
+  /* background-color: pink; */
+  height: 3rem;
   cursor: pointer;
   float: right;
-  margin-left: -1.5rem;
-  margin-top: -1.65rem;
+  margin-top: -3rem;
   margin-right: 1rem;
   position: relative;
   z-index: 2;
+  display: flex;
+  align-items: center;
 }
 /* FIN LOGIN */
