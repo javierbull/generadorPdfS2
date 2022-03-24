@@ -386,6 +386,8 @@ h4 {
 .form-login {
   /* background-color: lavender; */
   width: 23rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .wrap-img-login {
