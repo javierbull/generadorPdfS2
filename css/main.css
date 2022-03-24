@@ -121,6 +121,19 @@ h4 {
 /* Fin Buttons */
 
 /* Inputs */
+.field-icon {
+  /* background-color: pink; */
+  height: 3rem;
+  cursor: pointer;
+  float: right;
+  margin-top: -3rem;
+  margin-right: 1rem;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
 .form-group {
   margin-bottom: 1rem;
 }
@@ -358,16 +371,70 @@ h4 {
 /* FIN MODALS */
 
 /* LOGIN */
-.field-icon {
-  /* background-color: pink; */
-  height: 3rem;
-  cursor: pointer;
-  float: right;
-  margin-top: -3rem;
-  margin-right: 1rem;
-  position: relative;
-  z-index: 2;
+.wrap-form-login {
+  /* background-color: yellowgreen; */
+  min-height: calc(100vh - 72px);
   display: flex;
+  justify-content: center;
   align-items: center;
 }
+
+.form h1 {
+  margin-bottom: 1.5rem;
+}
+
+.form-login {
+  /* background-color: lavender; */
+  width: 23rem;
+}
+
+.wrap-img-login {
+  background-color: pink;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.video-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-text {
+  z-index: 1000;
+  color: var(--white);
+  padding: 1.5rem;
+}
+
+.welcome-text h3 {
+  font-size: 3rem;
+  color: var(--warning);
+  font-weight: 700;
+}
+
+.welcome-text h3 span {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: .5rem;
+}
+
+
 /* FIN LOGIN */
