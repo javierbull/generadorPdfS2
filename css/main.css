@@ -391,7 +391,7 @@ h4 {
 }
 
 .wrap-img-login {
-  background-color: pink;
+  /* background-color: pink; */
   min-height: calc(100vh - 72px);
   display: flex;
   justify-content: center;

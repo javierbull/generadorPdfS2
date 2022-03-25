@@ -45,6 +45,12 @@
   }
 
     /* Fin Generador PDF */
+
+    /* Login */
+    .wrap-img-login {
+      display: none;
+    }
+    /* End Login */
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -70,5 +76,6 @@
     border: 0;
     font-size: .875rem;
   }
+
 
 }
